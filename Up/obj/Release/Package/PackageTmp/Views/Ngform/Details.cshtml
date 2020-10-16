@@ -1,0 +1,30 @@
+﻿@model Up.Models.Ngform
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<link href="~/Content/form.css" rel="stylesheet" />
+<div class="fullwrap">
+    <div class="logo">
+        <img src="~/Content/logo.ico">
+    </div>
+    <div class="hpad">
+        <p>বিসমিল্লাহির রাহমানির রাহিম</p>
+        <h1>#নং ইউনিয়ন পরিষদ</h1>
+        <div class="subhead"></div>
+    </div>
+    <div class="banner">
+        <h1>নাগরিক সনদ পত্র</h1>
+    </div>
+
+    <div class="printmain">
+        <img src="~/Content/padd.png">
+        এই মর্মে প্রত্যয়ন করা যাইতেছে যে, @Html.DisplayFor(model => model.নাম) পিতা- @Html.DisplayFor(model => model.পিতা), মাতা- @Html.DisplayFor(model => model.মাতা), গ্রাম- @Html.DisplayFor(model => model.গ্রাম), ডাকঘর- @Html.DisplayFor(model => model.ডাকঘর), উপজেলা- শেরপুর সদর, জেলা- শেরপুর। তিনি অত্র ১নং কামারেরচর ইউনিয়ন পরিষদ কার্যালয় @Html.DisplayFor(model => model.ওয়ার্ড)নং ওয়ার্ডের স্থায়ী বাসিন্দা। তিনি জন্ম সূত্রে বাংলাদেশের নাগরিক। তাহার স্বভাব চরিত্র ভাল এবং আমার জানা মতে সে কোন প্রকার রাষ্ট্র বা সমাজ বিরোধী কাজে জড়িত নহে ।
+        <p> আমি তাহার জীবনের সর্বাঙ্গিন মঙ্গল কামনা করি ।</p>
+    </div>
+</div>
+<p>
+
+    @Html.ActionLink("Back to List", "Index")
+</p>

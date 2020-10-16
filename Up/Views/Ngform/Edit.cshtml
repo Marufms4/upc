@@ -1,0 +1,82 @@
+﻿@model Up.Models.Ngform
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Ngform</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.নাম, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.নাম)
+                @Html.ValidationMessageFor(model => model.নাম)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.পিতা, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.পিতা)
+                @Html.ValidationMessageFor(model => model.পিতা)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.মাতা, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.মাতা)
+                @Html.ValidationMessageFor(model => model.মাতা)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.গ্রাম, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.গ্রাম)
+                @Html.ValidationMessageFor(model => model.গ্রাম)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ডাকঘর, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ডাকঘর)
+                @Html.ValidationMessageFor(model => model.ডাকঘর)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ওয়ার্ড, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ওয়ার্ড)
+                @Html.ValidationMessageFor(model => model.ওয়ার্ড)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

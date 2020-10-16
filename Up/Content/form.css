@@ -1,0 +1,56 @@
+
+.printmain {
+    font-size: 26px;
+
+}
+.printmain p {
+    margin-top: 10%;
+}
+.printmain img {
+    position: absolute;
+    overflow: inherit;
+    margin-left: 17%;
+    opacity: 7.3;
+    background-repeat: no-repeat;
+}
+.fullwrap {
+    width: 20cm;
+    position: relative;
+    margin: 1.5cm auto;
+    min-height: 29.7cm;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    /*box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);*/
+    padding: 60px 60px 30px 60px;
+}
+    
+.hpad p {
+    margin-left: 30%;
+}
+.hpad h1 {
+    margin-left: 13%;
+    font-size: 53px;
+    color: orangered;
+}
+.subhead {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 4px double #2835ba;
+}
+.banner {
+    border: 2px solid #aaa;
+    padding: 10px 20px 5px;
+    display: inline-block;
+    margin: 4% 21% 4%;
+}
+.logo {
+
+}
+.logo img {
+    width: 15%;
+    height: 10%;
+    float: left;
+    margin-left: -5%;
+    margin-top: -2%;
+}

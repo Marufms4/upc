@@ -1,0 +1,72 @@
+﻿@model Up.Models.Ngform
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Ngform</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.নাম)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.নাম)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.পিতা)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.পিতা)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.মাতা)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.মাতা)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.গ্রাম)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.গ্রাম)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ডাকঘর)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ডাকঘর)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ওয়ার্ড)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ওয়ার্ড)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
